@@ -1,0 +1,317 @@
+body {
+    background-image: url(../imgs/sprite-bg.png);
+}
+
+.usebox {
+    position: relative;
+    margin: 0 auto;
+    top: 78px;
+    width: 1240px;
+    height: 980px;
+    /* height: auto; */
+}
+
+.usenav {
+    color: #888;
+    font-size: 12px;
+    position: relative;
+    height: 50px;
+    padding-top: 45px;
+}
+
+.usenav::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -40px;
+    background-position: -1185px 0;
+    width: 1240px;
+    height: 9px;
+    background-image: url(../imgs/sprite-img.png);
+    background-size: 2425px 572px;
+    background-repeat: no-repeat;
+}
+
+.usenav i {
+    display: inline-block;
+    width: 13px;
+    height: 12px;
+    background-image: url(../imgs/sprite-img.png);
+    background-repeat: no-repeat;
+    background-position: -1830px -76px;
+}
+
+.usenav .i_2 {
+    width: 6px;
+    height: 10px;
+    margin-right: 10px;
+    background-position: -1966px -76px;
+}
+
+.usenav a {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 20px 0 10px;
+    /* transition: underline .5s; */
+}
+
+.usenav a:hover {
+    text-decoration: underline;
+}
+
+.useinfo {
+    position: relative;
+    padding-left: 65px;
+    /* overflow: hidden; */
+}
+
+.useinfo h1 {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    /* margin-top: -20px; */
+    /* margin-left: 10px; */
+    width: 135px;
+    height: 40px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.useinfo .headpic {
+    display: inline-block;
+    margin-top: 90px;
+    width: 138px;
+    height: 138px;
+    background-image: url(../imgs/sprite-img.png);
+    /* background-size: 2425px 572px; */
+    background-repeat: no-repeat;
+    background-position: -143px -151px;
+}
+
+.useinfo>span {
+    position: absolute;
+    top: 113px;
+    left: 400px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: rgb(11, 170, 192);
+}
+
+.useinfo .fans {
+    position: absolute;
+    top: 172px;
+    right: 20px;
+    width: 218px;
+    height: 71px;
+}
+
+.useinfo .fans a {
+    display: inline-block;
+    width: 49%;
+    height: 71px;
+    text-align: center;
+    line-height: 10px;
+}
+
+.useinfo .fans a:hover .cu {
+    color: rgb(11, 170, 192);
+}
+
+.useinfo .fans a:first-child {
+    border-right: 1px solid rgb(214, 219, 219);
+}
+
+.useinfo .fans a span {
+    display: block;
+    font-size: 17px;
+}
+
+.useinfo .fans .cu {
+    display: inline-block;
+    margin-left: 0px;
+    margin-bottom: 18px;
+    height: 20px;
+    font-size: 37px;
+    /* font-weight: 700; */
+}
+
+.myinfo h3 {
+    display: inline-block;
+    /* padding-left: 10px; */
+    margin-top: -10px;
+    width: 150px;
+    line-height: 40px;
+}
+
+.myinfo h3::before {
+    content: '';
+    /* display: inline-block; */
+    position: absolute;
+    top: 33px;
+    left: 18px;
+    width: 4px;
+    height: 20px;
+    /* margin-top: 2px;
+    margin-right: 7px; */
+    background-color: rgb(11, 170, 192);
+}
+
+.myinfo {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    height: 84px;
+    padding: 20px 30px;
+    line-height: 49px;
+    border: 1px solid rgb(219, 214, 214);
+    background-color: rgb(248, 246, 246);
+}
+
+.myinfo a {
+    color: rgb(11, 170, 199);
+}
+
+.myinfo i {
+    display: inline-block;
+    margin-top: -7px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    background-image: url(../imgs/sprite-img.png);
+    background-repeat: no-repeat;
+    background-position: -1389px -76px;
+}
+
+.myinfo span {
+    font-size: 14px;
+}
+
+.myfocus {
+    position: relative;
+    padding: 20px 30px;
+    margin-top: 10px;
+    width: 732px;
+    height: 220px;
+    /* background-color: brown; */
+    background-color: rgb(248, 246, 246);
+    border: 1px solid rgb(219, 214, 214);
+}
+
+.myfocus h3::before {
+    content: '';
+    /* display: inline-block; */
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    width: 4px;
+    height: 20px;
+    /* margin-top: 2px;
+    margin-right: 7px; */
+    background-color: rgb(11, 170, 192);
+}
+
+.myfocus p {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    font-size: 14px;
+}
+
+.myheroway {
+    position: absolute;
+    top: 403px;
+    right: 0;
+    width: 500px;
+    height: 439px;
+    /* background-color: burlywood; */
+}
+
+.my_heropic {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.myheroway .my_heropic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.myheroway img:hover {
+    margin-top: -4px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mytask,
+.suggest {
+    position: relative;
+    margin-top: 6px;
+    padding: 20px 30px;
+    background-color: rgb(248, 246, 246);
+}
+
+.mytask h3::before,
+.suggest h3::before {
+    content: '';
+    /* display: inline-block; */
+    position: absolute;
+    top: 21px;
+    left: 18px;
+    width: 4px;
+    height: 20px;
+    /* margin-top: 2px;
+    margin-right: 7px; */
+    background-color: rgb(11, 170, 192);
+}
+
+.g_footer {
+    width: 100%;
+    height: 252px;
+    padding: 45px 0;
+    background-color: rgb(227, 226, 226);
+}
+
+.g_foot_box {
+    position: relative;
+    margin-top: 20px;
+    height: 188px;
+}
+
+.g_tenx_logo {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 189px;
+    height: 34px;
+    background-image: url(../imgs/topfoot-spr.png);
+    background-position: -216px 0;
+}
+
+.g_roit_logo {
+    position: absolute;
+    top: 32px;
+    left: 250px;
+    width: 82px;
+    height: 28px;
+    background-image: url(../imgs/topfoot-spr.png);
+    background-position: -216px -84px;
+}
+
+.g_foot_r {
+    float: right;
+    width: 750px;
+    height: 140px;
+}
+
+.g_foot_r img {
+    width: 100%;
+    height: 100%;
+}
