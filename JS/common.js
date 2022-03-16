@@ -195,6 +195,27 @@ window.onload = function() {
     })
 
 
+    var video_content = document.querySelector('.video_content');
+    console.log(video_content);
+    var ul = video_content.querySelectorAll('ul')
+    console.log(ul);
+    var n_video_nav = document.querySelector('.n_video_nav ul');
+    var video_nav_li = n_video_nav.querySelectorAll('li');
+    // console.log(video_nav_li);
+    for (var i = 0; i < video_nav_li.length; i++) {
+        video_nav_li[i].setAttribute('index', i)
+        console.log(video_nav_li[i]);
+        ul[i].setAttribute('index', i);
+        video_nav_li[i].addEventListener('mouseenter', function() {
+            var index = this.getAttribute('index');
+            console.log(index);
+            for (var i = 0; i < video_nav_li.length; i++) {
+                ul[i].style.display = 'none';
+            }
+            ul[index].style.display = 'block';
+        })
+    }
+
     // for (var i = 0; i < fixlis.length; i++) {
     //     fixlis[i].addEventListener('mouseenter', function() {
     //         animateY(fixlisi[0], -8);

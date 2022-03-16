@@ -1122,6 +1122,32 @@
     border-bottom: 1px solid rgb(214, 215, 216);
 }
 
+.n_video_nav ul li::after {
+    /* display: none; */
+    visibility: hidden;
+    content: '';
+    margin-right: -3px;
+    /* position: absolute; */
+    left: 0;
+    bottom: -3px;
+    display: block;
+    width: 64px;
+    height: 7px;
+    background-image: url(../imgs/index.png);
+    background-position: center center;
+    z-index: 10;
+    /* transition: all 0.5s; */
+}
+
+.n_video_nav ul li:hover a {
+    color: rgb(29, 166, 186) !important;
+    font-weight: 700;
+}
+
+.n_video_nav ul li:hover::after {
+    visibility: visible;
+}
+
 .events_nav ul {
     width: 1230px;
 }
@@ -1148,7 +1174,9 @@
 }
 
 .n_video_nav ul li {
-    margin-right: 40px;
+    padding: 0 4px;
+    text-align: center;
+    margin-right: 10px;
 }
 
 .n_video_nav ul li,
@@ -1222,6 +1250,7 @@
 }
 
 .video_content {
+    position: relative;
     margin-top: 26px;
     width: 100%;
     height: 402px;
@@ -1229,15 +1258,25 @@
 }
 
 .video_content ul {
-    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 .video_content ul li {
     position: relative;
+    float: left;
+    margin-right: 16px;
     width: 193px;
     height: 187px;
+}
+
+.video_content ul li:nth-child(4n) {
+    float: right;
+    margin-right: 0;
 }
 
 .video_content ul li:nth-child(n+5) {
